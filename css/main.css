@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Livvic';
-    src: url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
-        url('../fonts/Livvic-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
+    src: url('../fonts/Livvic-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Livvic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Livvic';
     src: url('../fonts/Livvic-Bold.woff2') format('woff2'),
-        url('../fonts/Livvic-Bold.woff') format('woff');
+    url('../fonts/Livvic-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -19,11 +19,42 @@
 @font-face {
     font-family: 'Livvic';
     src: url('../fonts/Livvic-MediumItalic.woff2') format('woff2'),
-        url('../fonts/Livvic-MediumItalic.woff') format('woff');
+    url('../fonts/Livvic-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/Livvic-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-Medium.woff2') format('woff2'),
+    url('../fonts/Livvic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
+    url('../fonts/Livvic-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: 'Livvic',sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -31,51 +62,53 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Livvic', sans-serif;
-    background-color: #014E56;
+/* header-start */
+
+.site-header{
+    padding: 73px 0 0 0;
+    background: #014E56;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0 20px;
 }
-.header{
-    margin-bottom: 140px;
-}
-.header-content{
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-}
-.hero-card2{
-    padding-bottom: 255px;
-    background-image: url("../images/taland-img.svg");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-}
-.header-logo{
-    display: flex;
-    justify-content: space-between;
+.find{
+    width: 1140px;
+    margin: 0 auto;
     align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
-.header-title{
-    width: 49px;
-    height: 28px;
+.icon-logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+.find__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-item{
+    margin-left: 40px;
+}
+.header-list{
+    margin-left: 40px;
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+.header-navlink{
     color: #FFF;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px; 
+    line-height: 28px;
 }
-.myteam-logo{
-    margin-right: 80px;
+.header-navlink:hover{
+    color: #F67E7E;
 }
-.text-space{
-    margin-right: 40px;
-}
-.button{
+.find-link{
     cursor: pointer;
     width: 153px;
     height: 46px;
@@ -92,7 +125,10 @@ body{
     line-height: 28px;
     background-color: #014E56;
 }
-.button:hover{
+.hamburger-btn{
+    display: none;
+}
+.find-link:hover{
     cursor: pointer;
     width: 153px;
     height: 46px;
@@ -109,70 +145,91 @@ body{
     line-height: 28px;
     background-color: white;
 }
+
+/* header-end */
+
+
+/* hero-section-start */
+
+.hero-section{
+    padding:  160px 165px 250px 165px ;
+    height: 700px;
+    background: #014E56;
+    background-image: url("../images/back-img1.png"),url("../images/CombinedShape.png"),url("../images/Oval.png"),url("../images/CombinedCopy.png"),url("../images/Rectangle.png"),url("../images/Combined\ Shape123.png");
+    background-repeat: no-repeat, no-repeat,no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position-x:calc(0% - 0px),965px,965px,1063px,1250px,1075px;
+    background-position-y:calc(50% - 107px),600px,600px,600px,600px,600px;
+}
+
 .hero-content{
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 30px;
 }
 .hero-title{
-    width: 620px;
+    width: 670px;
+    display: flex;
     color: #FFF;
+    flex-direction: column;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
     line-height: 100px;
-    margin-bottom: 250px;
+    
 }
-.color-red{
+
+.t1{
     color: #F67E7E;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
     line-height: 100px;
 }
-.hero-line{
-    display: inline-block;
+
+.hero-strong{
+    display: flex;
+    width: 445px;
+    height: 195px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 79px;
+    flex-shrink: 0;
+}
+.find-line{
     width: 50px;
-    height: 4px;
+    height: 4px;     
+    display: inline-block;
     flex-shrink: 0;
     background: #79C8C7;
-    margin-bottom: 79px;
 }
-.hero-text{
-    width: 445px;
+.find-text{
+    width: 417px;
     color: #FFF;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
 }
-.team-section{
-    background-color: #012F34;
-    /* background-image: url("../images/element-bg3.png");
-    background-repeat: no-repeat;
-    background-position: calc(50% + 759px) calc(50% + 163px);    */
+
+/* hero-section-end */
+
+
+/* service-section-start */
+
+.service-section{
+    padding: 140px 165px 140px 165px;
+    background: #012F34;
 }
-.teams{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 140px;
-}
-.team-line{
-    margin-top: 140px;
-    margin-bottom: 54px;
+
+.card-line1{
     width: 50px;
-    height: 4px;
+    height: 4px;     
+    display: inline-block;
     flex-shrink: 0;
-    background: #F67E7E;
+    background-color: #F67E7E;
 }
-.teams-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-.team-text{
-    margin-left: 20px;
-}
-.team-title{
+.content-title{
     width: 445px;
     color: #FFF;
     font-size: 48px;
@@ -180,7 +237,25 @@ body{
     font-weight: 700;
     line-height: 48px;
 }
-.team-title-color{
+.card-content{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 125px;
+}
+.content-strong{
+    display: flex;
+    width: 445px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 54px;
+    flex-shrink: 0;
+}
+.individuals{
+    display: flex;
+}
+.individuals-span{
     width: 445px;
     color: #F67E7E;
     font-size: 18px;
@@ -188,7 +263,15 @@ body{
     font-weight: 700;
     line-height: 28px;
 }
-.teams-text{
+.individuals-network{
+    display: flex;
+    margin-left: 23px;
+    flex-direction: column;
+    gap: 16px
+    
+    
+}
+.individuals-text{
     width: 445px;
     color: #FFF;
     font-size: 15px;
@@ -197,338 +280,250 @@ body{
     line-height: 25px;
     opacity: 0.8;
 }
+.individuals1{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.service-section{
+    background-image: url("../images/logojon.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(91% + 130px);
+    background-position-y:calc(152% - 200px);
+}
+/* service-section-end */
+
+/* leading-section-start */
+
+.leading-section{
+    padding: 140px 165px 245px 165px;
+    background-color: #004047;
+    background-image: url("../images/logochik.svg"),url("../images/perfectly.svg"),url("../images/perfectly.svg"),url("../images/perfectly.svg"),url("../images/kady.baker.png"),url("../images/aiysha.png"),url("../images/arthur.png"),url("../images/clarke.svg");
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+    background-position-x: calc(0% + 0px),369px,732px,1132px,373px,757px,1137px,1319px;
+    background-position-y: calc(58% - 400px),290px,290px,290px,585px,585px,585px,751px;
+}
+
+.delivering-title{
+    width: 842px;
+    margin-left: 143px;
+    text-align: center;
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
 .card1{
     display: flex;
-    justify-content: space-between;
-}
-.stories-section{
-    background-color: #004047; 
-    background-image: url("../images/element-bg4.svg"),url("../images/element-bg5.svg");
-    background-repeat: no-repeat no-repeat;
-    background-position: calc(50% - 700px) calc(50% - 323px), calc(50% + 660px) calc(50% + 374px);   
-}
-.stories-title-text{
-    display: flex;
     justify-content: center;
+    margin-top: 56px;
+    padding: 36px 105px;
+    gap: 30px;
 }
-.stories-title{
-    margin-top: 140px;
-    width: 933px;
-    color: #FFF;  
-    text-align: center;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-}
-.stories-text-color{
-    color: #79C8C7;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-}
-.stories-content{
-    display: flex;
-    justify-content: space-between;
-}
-.stories-text2{
-    width: 350px;
-    color: #FFF;  
+.delivering-text{
+    width: 338px;
+    color: #FFF;
     text-align: center;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: 25px;
-    margin-top: 92px;
-    margin-bottom: 24px;
 }
-.stories-text{
+.delivering-text1{
+    width: 302px;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+.delivering-text2{
+    width: 326px;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.delivering-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.kady{
+    text-align: center;
+}
+.kady-name{
     width: 350px;
-    color: #79C8C7;  
+    color: #79C8C7;
     text-align: center;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px; 
+    line-height: 28px;
 }
-.stories-text3{
+.kady-product{
     width: 350px;
-    color: #FFF;   
+    color: #FFF;
     text-align: center;
     font-size: 13px;
     font-style: italic;
     font-weight: 500;
     line-height: 18px; 
-    margin-bottom: 32px;
 }
-.stories-png{
-    width: 350px;
-    text-align: center;
-}
-.stories-img{
-    margin-bottom: 151px;
-    border-radius: 62px;
-    border: 2px solid #C4FFFE;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    flex-shrink: 0;
-}
-.footer-color{
-    background-color: #F67E7E;
-    background-image: url("../images/element-bg6.svg");
+
+/* leading-section-end */
+
+/* footer-start */
+
+.footers{
+    padding: 76px 260px 76px 263px;
+    background-color:#F67E7E;
+    background-image: url("../images/started.svg");
     background-repeat: no-repeat;
-    background-position: calc(50% - 660px) calc(50% + 79px);
+    background-position-x: calc(0% + 0px);
+    background-position-y: calc(116% - 9px);
 }
-.footer-card{
-    padding-top: 76px;
-    padding-bottom: 76px;
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-}
+
 .footer-title{
+    width: 500px;
     color: #012F34;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
 }
-.footer-button{
-    cursor: pointer;
+.footer-line{
     width: 153px;
     height: 48px;
-    flex-shrink: 0;
-    border-radius: 24px;
+    padding: 18px 14px;
+    border-radius: 40px;
     border: 2px solid black;
-    color: #012F34;
-    font-size: 18px;
     text-align: center;
-    padding-top: 8px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    background-color: #F67E7E;
-}
-.footer-button:hover{
-    cursor: pointer;
-    width: 153px;
-    height: 48px;
     flex-shrink: 0;
-    border-radius: 24px;
-    border: 2px solid black;
-    color: #F67E7E;
-    font-size: 18px;
-    text-align: center;
-    padding-top: 8px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    background-color: #012F34;
-}
-.footer-bg{
-    background-color: #002529;
-}
-.footer-end{
-    padding-top: 48px;
-    padding-bottom: 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-.footer-end-logo{
-    flex-shrink: 0;
-}
-.footer-end-text{
-    width: 445px;
     color: #FFF;
-    opacity: 0.6;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 25px;
+    line-height: 4px;
+}
+.footer-line:hover{
+    background-color: #012F34;
+    
+
 }
 .footer-link{
+    color: #012F34;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+.footer-link:hover{
+    color: #FFF;
+}
+.footer-content{
+    width: 920px;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 260px;
+    flex-shrink: 0;
+}
+
+/* footer-end */
+
+.myteam-footer{
+    padding: 48px 165px;
+    background-color: #002529;
+}
+
+.hillcrest{
+    width: 385px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-shrink: 0;
+}
+.footer-list{
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+.footer-navlink{
     color: #FFF;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px; 
+    line-height: 28px;
 }
-.footer-link + .footer-link{
-    margin-left: 40px;
+.footer-navlink:hover{
+    color: #F67E7E;
+}
+.hillcrest-footer{
+    width: 542px;
+    display: flex;
+    justify-content: space-between;
+}
+.hillcrest-text{
+    width: 445px;
     color: #FFF;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; 
-}
-.footer-card3{
-    text-align: right;
-    cursor: pointer;
-}
-.footer-svg{
-    flex-shrink: 0;
-    text-align: right;
-}
-.footer-text{
-    margin-top: 51px;
-    width: 255px;
-    color: #FFF;   
-    text-align: right;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: 25px;
     opacity: 0.6;
 }
-.hamburger-btn{
-    display: none;
+.faceboook{
+    margin-left: 151px;
 }
-@media only screen and (max-width:768px){
-    .myteam-logo{
-        margin-right: 48px;
-        margin-left: 10px;
-        width: 128px;
-        height: 32px;
-    }
-    .hero-content{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .hero-title{
-        text-align: center;
-        margin-bottom: 24px;
-
-    }
-    .hero-line{
-        display: inline;
-    }
-    .hero-text{
-        text-align: center;
-    }
-    .hero-card2{
-        padding-bottom: 256px;
-        background-image: url("../images/taland-img2.svg");
-        background-repeat: no-repeat;
-        background-position: center bottom;
-    }
-    .team-title{
-        width: 100%;
-    }
-    .teams-content{
-        flex-direction: column;
-        gap: 64px;
-    }
-    .teams{
-        display: flex;
-        flex-direction: column;
-        gap: 17px;
-        padding-left: 80px;
-    }
-    .team-text{
-        padding-top: 32px;
-    }
-    .teams-text{
-        margin-top: 16px;
-    }
-    .card1{
-        display: flex;
-        justify-content: center;
-    }
-   .stories{
-    display: flex;
-    flex-direction: column;
-    background-image: url("../images/stories-svg.svg");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-   }
-   .stories-title{
-    margin-bottom: 84px;
-   }
-   .stories-text2{
-    margin-top: 0;
-   }
-   .stories-img{
-    margin-bottom: 110px;
-   }
-   .stories-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-   .footer-bg{
-    padding-bottom: 56px;
-   }
-   .footer{
-    background-image: url("../images/ready-svg.svg");
-    background-repeat: no-repeat;
-    background-position: left bottom;
-   }
-   .footer-title{
-    color: #012F34;
-    font-family: Livvic;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px; /* 100% */
-    margin-right: 84px;
-   }
-   .footer-card1{
-    margin-bottom: 33px;
-   }
-   .footer-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-   .footer-end-logo{
-    width: 96px;
-    height: 24px;
-    margin-bottom: 53px;
-   }
-   .footer-link{
+.faceboook:hover{
+    background-color: #F67E7E;
+}
+.hillcrest-text1{
+    
+    width: 255px;
     color: #FFF;
-    font-family: Livvic;
+    text-align: right;
+    margin-top: 47px;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: 25px; /* 166.667% */
-   }
-   .footer-end{
-    padding-bottom: 0;
-    display: flex;
-    justify-content: space-between;
-   }
-   .footer-end-text{
-    width: auto;
-   }
-   .footer-card3{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   }
-   .footer-box{
-    display: flex;
-    flex-direction: column;
-   }
-   .footer-text{
-    margin-top: 0;
-   }
+    opacity: 0.6;
 }
+
+.reserved{
+    width: 380px;
+}
+
+
 @media only screen and (max-width: 376px) {
-    .header-text{
+    .header-list{
         display: none;
     }
-    .header-logo{
+    .find__content{
         width: 128px;
         height: 32px;
     }
-    .button{
+    .find-link{
         display: none;
     }
     .hamburger-btn{
         display: block;
         background-color: #014E56;
+    }
+    .delivering{
+        display: flex;
+        flex-direction: column;
+        background-image: url("../images/delivering-img-bg.svg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
     }
     .hero-title{
         color: #FFF;
@@ -539,7 +534,7 @@ body{
         font-weight: 700;
         line-height: 40px; /* 100% */
     }
-    .color-red{
+    .t1{
         color: #F67E7E;
         font-family: Livvic;
         font-size: 40px;
@@ -560,11 +555,11 @@ body{
         width: 369px;
         padding-left: 24px;
         padding-right: 24px;
-        background-image: url("../images/taland-img-mobile.svg");
+        background-image: url("../images/hero-card2-bg-imgg.svg");
         background-repeat: no-repeat;
         background-position: center bottom;
     }
-    .hero-text{
+    .find-text{
         color: #FFF;
         text-align: center;
         font-family: Livvic;
@@ -573,13 +568,20 @@ body{
         font-weight: 600;
         line-height: 28px; /* 186.667% */
     }
-    .hero-line{
+    .find-line{
         display: none;
     }
-    .card{
+    .cardd{
         width: 240px;
     }
-    .team-title{
+    .cards-section{
+        padding-left: 24px;
+        padding-bottom: 0;
+        background-image: url("../images/build-bg-imggg.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    .content-title{
         color: #FFF;
         font-family: Livvic;
         font-size: 32px;
@@ -587,25 +589,19 @@ body{
         font-weight: 700;
         line-height: 32px; /* 100% */
     }
-    .team-line{
+    .card-line1{
         margin-top: 64px;
         margin-bottom: 32px;
     }
-    .team-text{
+    .individuals-network{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-left: 0;
     }
-    .teams{
-        padding-left: 24px;
-        padding-bottom: 0;
-        background-image: url("../images/build-logo.svg");
-        background-repeat: no-repeat;
-        background-position: right top;
-    }
-    .card1{
+  
+    .individuals{
         width: 327px;
         display: flex;
         flex-direction: column;
@@ -613,7 +609,7 @@ body{
         justify-content: center;
         margin-bottom: 60px;
     }
-    .team-title-color{
+    .individuals-span{
         width: 327px;
         display: inline-block;
         color: #F67E7E;
@@ -624,7 +620,7 @@ body{
         font-weight: 700;
         line-height: 28px; /* 155.556% */
     }
-    .teams-text{
+    .individuals-text{
         width: 327px;
         display: flex;
         justify-content: center;
@@ -637,10 +633,10 @@ body{
         font-weight: 600;
         line-height: 25px; /* 166.667% */
     }
-    .stories-title-text{
+    .delivering-title-text{
         width: 327px;
     }
-    .stories-title{
+    .delivering-title{
         color: #FFF;
         text-align: center;
         font-family: Livvic;
@@ -649,7 +645,7 @@ body{
         font-weight: 700;
         line-height: 32px; /* 100% */
     }
-    .stories-text-color{
+    .delivering-text-color{
         color: #79C8C7;
         font-family: Livvic;
         font-size: 32px;
@@ -657,7 +653,7 @@ body{
         font-weight: 700;
         line-height: 32px;
     }
-    .stories-text2{
+    .delivering-text{
         color: #FFF;
         text-align: center;
         font-family: Livvic;
@@ -666,7 +662,7 @@ body{
         font-weight: 600;
         line-height: 25px; /* 166.667% */
     }
-    .stories-text{
+    .kady-name{
         color: #79C8C7;
         text-align: center;
         font-family: Livvic;
@@ -675,7 +671,7 @@ body{
         font-weight: 700;
         line-height: 28px; /* 155.556% */
     }
-    .stories-text3{
+    .kady-product{
         color: #FFF;
         text-align: center;
         font-family: Livvic;
@@ -684,16 +680,16 @@ body{
         font-weight: 500;
         line-height: 18px; /* 138.462% */
     }
-    .stories{
+    .delivering{
         background-image: none;
     }
 
-    .stories-section{
-        background-image: url("../images/stories-mobile-img1.svg") , url("../images/stories-mobile-img2.svg");
+    .leading-section{
+        background-image: url("../images/leading-bg-imggg.svg") , url("../images/leadin-img-bggg.svg");
         background-position: left top, right bottom;
         background-repeat: no-repeat, no-repeat;
     }
-    .footer-card{
+    .footer-line{
         padding-left: 24px;
         padding-right: 24px;
         width: 327px;
@@ -712,22 +708,22 @@ body{
         line-height: 32px; /* 100% */
         margin: 0;
     }
-    .footer-button{
+    .footer-link{
         margin-top: 24px;
         margin-bottom: 83px;
     }
-    .footer{
-        background-image: url("../images/ready-mobile-img.svg");
+    .footer-line{
+        background-image: url("../images/footeer-bgg-img.svg");
         background-repeat: no-repeat;
         background-position: left bottom;
     }
-    .footer-end{
+    .hillcrest-contents-text{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-bottom: 40px;
     }
-    .footer-card3{
+    .reserved{
         flex-direction: column;
         gap: 16px;
     }

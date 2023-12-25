@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Livvic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-Bold.woff2') format('woff2'),
+    url('../fonts/Livvic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Livvic-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/Livvic-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-Medium.woff2') format('woff2'),
+    url('../fonts/Livvic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
+    url('../fonts/Livvic-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: 'Livvic' , sans-serif;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.about-section{
+    padding: 73px 165px 120px 165px;
+    background-color:#014E56;
+    background-repeat: no-repeat;
+    background-position-x: calc(50% + 720px);
+    background-position-y: calc(100% - 0px);
+}
+.container{
+    width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.about-content{
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+.icon-logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+.about-item{
+    margin-left: 40px;
+}
+.about-list{
+    margin-left: 40px;
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+.about-navlink{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+.about-link{
+    width: 160px;
+    height: 45px;
+    padding: 18px 14px;
+    border-radius: 40px;
+    border: 2px solid white;
+    text-align: center;
+    margin-left: 560px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4px;
+}
+
+/* quality-start */
+
+
+.quality{
+    background-color: #014E56;
+    background-image: url("./images/myteam99.png"),url("./images/myteam88.png");
+    background-repeat: no-repeat,no-repeat;
+    background-position-x: calc(0% + 0px),1419px;
+    background-position-y: calc(70% - 180px),235px;
+}
+.container{
+    width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.quality-title{
+    width: 350px;
+    width: 350px;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px;
+}
+.quality-text{
+    width: 540px;
+    color: #F67E7E;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; 
+}
+.quality-cards{
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+.individuals{
+    display: flex;
+}
+.individuals-text{
+    width: 445px;
+    color: #FFF;
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.individuals-network{
+    display: flex;
+    margin-left: 23px;
+    flex-direction: column;
+    gap: 52px
+}
+
+
+
+/* myteam-start */
+
+
+.myteam-footer{
+    padding: 48px 165px;
+    background-color: #002529;
+}
+.container{
+    width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.hillcrest{
+    width: 385px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-shrink: 0;
+}
+.footer-list{
+    width: 115px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+}
+.footer-navlink{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+.hillcrest-footer{
+    width: 542px;
+    display: flex;
+    justify-content: space-between;
+}
+.hillcrest-text{
+    width: 445px;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+}
+.faceboook{
+    margin-left: 151px;
+}
+.hillcrest-text1{
+    
+    width: 255px;
+    color: #FFF;
+    text-align: right;
+    margin-top: 47px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 166.667% */
+    opacity: 0.6;
+}
+
+.reserved{
+    width: 380px;
+}
+.input-form{
+    
+    width: 440px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+hr{
+    width: 380px;
+    margin-bottom: 24px;
+}
+.input-form::placeholder{
+    color: #F67E7E;
+    
+}
+.hr:hover{
+    background-color: #79C8C7;
+
+}
+
+.input{
+    border: none;
+}
+
+.input::placeholder{
+    color: gray;
+}
+.input-card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.input-form{
+    background-color: #014E56;
+    border: none;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 166.667% */
+    letter-spacing: -0.115px;
+    opacity: 0.6;
+}
+.input-link{
+    display: inline-block;
+    width: 130px;
+    padding: 8px 14px;
+    margin-right: 50px;
+    border-radius: 24px;
+    border: 2px solid white;
+    text-align: center;
+    flex-shrink: 0;
+    background-color: #FFF;
+    color: #004047;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+.cardsf{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+}
+.quality-cardsss{
+    display: flex;
+    padding-bottom: 128px;
+}
