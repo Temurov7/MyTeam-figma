@@ -49,12 +49,6 @@ body{
     justify-content: space-between;
     max-width: 1200px;
 }
-.hero-card2{
-    padding-bottom: 255px;
-    background-image: url("../images/taland-img.svg");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-}
 .header-logo{
     display: flex;
     justify-content: space-between;
@@ -76,7 +70,6 @@ body{
     margin-right: 40px;
 }
 .button{
-    cursor: pointer;
     width: 153px;
     height: 46px;
     flex-shrink: 0;
@@ -114,7 +107,8 @@ body{
     justify-content: space-between;
 }
 .hero-title{
-    width: 620px;
+    width: 350px;
+    height: 200px;
     color: #FFF;
     font-size: 100px;
     font-style: normal;
@@ -129,169 +123,160 @@ body{
     font-weight: 700;
     line-height: 100px;
 }
-.hero-line{
-    display: inline-block;
-    width: 50px;
-    height: 4px;
-    flex-shrink: 0;
-    background: #79C8C7;
-    margin-bottom: 79px;
-}
-.hero-text{
-    width: 445px;
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-}
-.team-section{
-    background-color: #012F34;
-    /* background-image: url("../images/element-bg3.png");
-    background-repeat: no-repeat;
-    background-position: calc(50% + 759px) calc(50% + 163px);    */
-}
-.teams{
+.hero-card2{
     display: flex;
     flex-direction: column;
-    padding-bottom: 140px;
 }
-.team-line{
-    margin-top: 140px;
-    margin-bottom: 54px;
+.hero-line{
     width: 50px;
     height: 4px;
     flex-shrink: 0;
     background: #F67E7E;
+    margin-bottom: 40px;
 }
-.teams-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-.team-text{
-    margin-left: 20px;
-}
-.team-title{
-    width: 445px;
+.hero-text{
+    width: 730px;
     color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+.directors-section{
+    background-color: #004047;
+    background-image: url("../images/element-bg8.png"), url("../images/element-bg9.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: calc(50% - 759px) calc(50% - 425px), calc(50% + 700px) calc(50% + 475px);
+}
+.director-title-text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+.director-title{
+    padding-top: 140px;
+    width: 920px;
+    color: #FFF;
+    text-align: center;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 48px; 
 }
-.team-title-color{
-    width: 445px;
-    color: #F67E7E;
+.directors-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 30px;
+    padding-bottom: 168px;
+}
+.director-border{
+    margin-bottom: 133px;
+}
+.directors-card1{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #012F34;
+    text-align: center;
+}
+.directors-name{
+    display: flex;
+    flex-direction: column;
+    color: #79C8C7;
+    text-align: center;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
 }
-.teams-text{
-    width: 445px;
+.directors-text{
     color: #FFF;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px;
-    opacity: 0.8;
-}
-.card1{
-    display: flex;
-    justify-content: space-between;
-}
-.stories-section{
-    background-color: #004047; 
-    background-image: url("../images/element-bg4.svg"),url("../images/element-bg5.svg");
-    background-repeat: no-repeat no-repeat;
-    background-position: calc(50% - 700px) calc(50% - 323px), calc(50% + 660px) calc(50% + 374px);   
-}
-.stories-title-text{
-    display: flex;
-    justify-content: center;
-}
-.stories-title{
-    margin-top: 140px;
-    width: 933px;
-    color: #FFF;  
-    text-align: center;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-}
-.stories-text-color{
-    color: #79C8C7;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-}
-.stories-content{
-    display: flex;
-    justify-content: space-between;
-}
-.stories-text2{
-    width: 350px;
-    color: #FFF;  
     text-align: center;
     font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px;
-    margin-top: 92px;
-    margin-bottom: 24px;
-}
-.stories-text{
-    width: 350px;
-    color: #79C8C7;  
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px; 
-}
-.stories-text3{
-    width: 350px;
-    color: #FFF;   
-    text-align: center;
-    font-size: 13px;
     font-style: italic;
     font-weight: 500;
-    line-height: 18px; 
-    margin-bottom: 32px;
+    line-height: 25px;
 }
-.stories-png{
-    width: 350px;
-    text-align: center;
-}
-.stories-img{
-    margin-bottom: 151px;
-    border-radius: 62px;
-    border: 2px solid #C4FFFE;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+.border-radius{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
+    border-radius: 56px;
+    background: #F67E7E;
+}
+.border{
+    font-size: 28px;
+}
+.border-radius-color{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 56px;
+    background: #79C8C7;
+}
+.directors-text1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 254px;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+.footer-clients{
+    background-color: #012F34;
+
+}
+.footer-title-text{
+    margin-top: 140px;
+    margin-bottom: 64px;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 .footer-color{
     background-color: #F67E7E;
-    background-image: url("../images/element-bg6.svg");
-    background-repeat: no-repeat;
-    background-position: calc(50% - 660px) calc(50% + 79px);
 }
 .footer-card{
-    padding-top: 76px;
-    padding-bottom: 76px;
     display: flex;
     align-items: start;
     justify-content: space-between;
+    padding-top: 76px;
+    padding-bottom: 76px;
 }
 .footer-title{
     color: #012F34;
+    display: flex;
+    flex-direction: column;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
+}
+.footer-img{
+    margin-bottom: 140px;
 }
 .footer-button{
     cursor: pointer;
@@ -301,9 +286,9 @@ body{
     border-radius: 24px;
     border: 2px solid black;
     color: #012F34;
-    font-size: 18px;
     text-align: center;
     padding-top: 8px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
@@ -380,15 +365,17 @@ body{
     line-height: 25px;
     opacity: 0.6;
 }
-.hamburger-btn{
-    display: none;
-}
 @media only screen and (max-width:768px){
     .myteam-logo{
         margin-right: 48px;
         margin-left: 10px;
         width: 128px;
         height: 32px;
+    }
+    .site-header{
+        background-image: url("../images/about-img.svg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
     }
     .hero-content{
         flex-direction: column;
@@ -398,19 +385,29 @@ body{
     .hero-title{
         text-align: center;
         margin-bottom: 24px;
-
+        height: 60px;
     }
     .hero-line{
+        width: 0;
+        height: 0;
         display: inline;
     }
     .hero-text{
         text-align: center;
+        width: 444px;
     }
     .hero-card2{
-        padding-bottom: 256px;
-        background-image: url("../images/taland-img2.svg");
-        background-repeat: no-repeat;
-        background-position: center bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        text-align: center;
+        font-family: Livvic;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 186.667% */
+        padding-bottom: 112px;
     }
     .team-title{
         width: 100%;
@@ -473,6 +470,11 @@ body{
     line-height: 32px; /* 100% */
     margin-right: 84px;
    }
+   .footer-clients{
+    background-image: url("../images/element-bg10.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+   }
    .footer-card1{
     margin-bottom: 33px;
    }
@@ -485,6 +487,13 @@ body{
     width: 96px;
     height: 24px;
     margin-bottom: 53px;
+   }
+   .footer-img{
+    padding-left: 49px;
+    width: 689px;
+    height: 28px;
+    flex-shrink: 0;
+     
    }
    .footer-link{
     color: #FFF;
@@ -514,6 +523,19 @@ body{
    .footer-text{
     margin-top: 0;
    }
+   .directors-section{
+    background-image: url("../images/directors-svg2.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+   }
+   .directors-card{
+    background-image: url("../images/directors-svg.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+   }
+   .directors-card1{
+    width: 281px;
+   }
 }
 @media only screen and (max-width: 376px) {
     .header-text{
@@ -526,9 +548,18 @@ body{
     .button{
         display: none;
     }
+    .site-header{
+        background-image: none;
+    }
+    .header{
+        margin-bottom: 80px;
+    }
     .hamburger-btn{
         display: block;
         background-color: #014E56;
+    }
+    .hero-content{
+        width: 327px;
     }
     .hero-title{
         color: #FFF;
@@ -560,11 +591,12 @@ body{
         width: 369px;
         padding-left: 24px;
         padding-right: 24px;
-        background-image: url("../images/taland-img-mobile.svg");
+        background-image: url("../images/about-mobile-img.svg");
         background-repeat: no-repeat;
-        background-position: center bottom;
+        background-position: right bottom;
     }
     .hero-text{
+        width: 327px;
         color: #FFF;
         text-align: center;
         font-family: Livvic;
@@ -575,6 +607,20 @@ body{
     }
     .hero-line{
         display: none;
+    }
+    .directors-section{
+        background-image: url("../images/directors-mobile-img.svg");
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+    .director-title{
+        color: #FFF;
+        text-align: center;
+        font-family: Livvic;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 100% */
     }
     .card{
         width: 240px;
@@ -693,6 +739,11 @@ body{
         background-position: left top, right bottom;
         background-repeat: no-repeat, no-repeat;
     }
+    .footer-clients{
+        background-image: url("../images/clients-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
     .footer-card{
         padding-left: 24px;
         padding-right: 24px;
@@ -716,10 +767,22 @@ body{
         margin-top: 24px;
         margin-bottom: 83px;
     }
+    .footer-title-text{
+        color: #FFF;
+        text-align: center;
+        font-family: Livvic;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 100% */
+    }
     .footer{
         background-image: url("../images/ready-mobile-img.svg");
         background-repeat: no-repeat;
         background-position: left bottom;
+    }
+    .footer-img{
+        display: none;
     }
     .footer-end{
         flex-direction: column;
