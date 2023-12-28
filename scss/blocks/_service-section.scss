@@ -1,0 +1,129 @@
+.service-section {
+    padding: 140px 0;
+    background-color: #012F34;
+    background-image: url("../../image/build-bg.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.manage__line {
+    width: 50px;
+    height: 4px;
+    margin-bottom: 54px;
+    display: inline-block;
+    background-color: #F67E7E;
+}
+.manage__content{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.manage__card-title{
+    width: 445px;
+}
+.manage__title {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; 
+}
+.manage__wrapper{
+    width: 540px;
+}
+.manage__item {
+    display: flex;
+    align-items: start;
+}
+.manage__item + .manage__item{
+    margin-top: 32px;
+}
+.manage__item-text{
+    margin-left: 23px;
+}
+.manage__bold {
+    margin-bottom: 16px;
+    display: inline-block;
+    color: #F67E7E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+}
+.manage__text {
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; 
+}
+@media only screen and (max-width: 768px){
+    .service-section{
+        padding: 100px 0 100px 0;
+        background-image: url("../image/build-tablet-bg.png");
+        background-position: right top;
+    }
+    .manage__content{
+        flex-direction: column;
+    }
+    .manage__line{
+        margin-bottom: 32px;
+    }
+    .manage__card-title{
+        width: 100%;
+        margin-bottom: 64px;
+        text-align: start;
+    }
+    .manage__title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .manage__wrapper{
+        width: 100%;
+    }
+    .manage__bold{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .manage__text{
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+@media only screen and (max-width:560px){
+    .service-section{
+        margin: 0;
+        padding: 64px 0 16px 0;
+        background-image: url("../../image/build-mobile-bg.png");
+        background-position: right top;
+    }
+    .manage__card-title{
+        width: 100%;
+        margin-bottom: 56px;
+    }
+    .manage__title{
+        font-size: 32px;
+        line-height: 32px; 
+    }
+    .manage__wrapper{
+        width: 100%;
+    }
+    .manage__item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .manage__item-text{
+        margin-left: 0;
+    }
+    .manage__bold{
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 28px; 
+    }
+    .manage__text{
+        margin-bottom: 48px;
+        font-size: 15px;
+        line-height: 25px; 
+        opacity: 0.8;
+    }
+}

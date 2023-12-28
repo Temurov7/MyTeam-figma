@@ -3,124 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./contact.css">
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
-    
-    <section class="about-section">
+    <header class="site-header">
         <div class="container">
-            <div class="about-content">
-                <a href="/" class="icon-logo">
-                    <img src="./images/myteam-logo.svg" alt="" width="160" height="40">
+            <div class="header">
+                <a class="header-logo-link" href="#">
+                    <img class="logo-img" src="./image/logo.svg" alt="myteam-logo">
                 </a>
-                <ul class="about-list">
-                    <li class="about-item">
-                        <a href="" class="about-navlink">home</a>
-                    </li>
-                    <li class="about-item">
-                        <a href="" class="about-navlink">about</a>
-                    </li>
-                    
-                </ul>
-                <a href="#" class="about-link">contact us</a>
+                <div class="header-navbar">
+                    <ul class="header-list">
+                        <li class="header-item">
+                            <a target="blank" class="header-navlink" href="./index.html">home</a>
+                        </li>
+                        <li class="header-item">
+                            <a target="blank" class="header-navlink" href="./about.html">about</a>
+                        </li>
+                    </ul>
+                    <a class="header-link" href="#">contact us</a>
+                </div>
             </div>
             
-        </div>
-    </section>
-
-    <section class="quality">
-<div class="container">
-    <div class="quality-cardsss">
-    <div class="quality-cards">
-<div class="quality-content1">
-    <h2 class="quality-title">Contact</h2>
-    <p class="quality-text">Ask us about</p>
-</div>
-
-
-<div class="individuals">
-    <img src="./images/service-s-logo.svg" alt="" width="72" height="72">
-    <div class="individuals-network">
-        <p class="individuals-text">The quality of our talent network</p>
-        
-    </div></div>
-    <div class="individuals">
-        <img src="./images/./Group 12.svg" alt="" width="72" height="72">
-        <div class="individuals-network">
-            <p class="individuals-text">Usage & implementation of our software</p>
-        </div></div>
-        <div class="individuals">
-            <img src="./images/./Group 13.svg" alt="" width="72" height="72">
-            <div class="individuals-network">
-                <p class="individuals-text">How we help drive innovation</p>
-            </div></div></div>
-            <form class="cardsf" action="https://echo.htmlacademy.ru" method="post">
-                <div class="input-card">
-             <input type="text" class="input-form" placeholder="Name">
-             <hr class="hr">
+            <div class="contact">
+                <div class="contact-wrap">
+                    <h2 class="contact-title">Contact</h2>
+                    <strong class="contact-bold">Ask us about</strong>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <div class="contact-inner">
+                                <img class="contact-img" src="./image/hero-img1.svg" alt=" contact img" width="72" height="72">
+                                <p class="contact-text">The quality of our talent network</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-inner">
+                                <img class="contact-img" src="./image/hero-img2.svg" alt=" contact img" width="72" height="72">
+                                <p class="contact-text">Usage & implementation of our software</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-inner">
+                                <img class="contact-img" src="./image/hero-img3.svg" alt=" contact img" width="72" height="72">
+                                <p class="contact-text">How we help drive innovation</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form class="cardsf" action="https://echo.htmlacademy.ru" method="post">
+                            <input name="User_name" autocomplete="off" aria-label="Name" type="text" class="input-form" placeholder="Name">
+                            <input name="User_email" autocomplete="off" aria-label="Email" type="email" class="input-form" placeholder="Email">
+                            <input type="text" name="Company_name" autocomplete="off" aria-label="Company Name" class="input-form" placeholder="Company Name">
+                            <input type="text" name="title" autocomplete="off" aria-label="Title" class="input-form" placeholder="Title">
+                            <input type="text" name="Mesage" autocomplete="off" aria-label="Messege"  class="input-form" placeholder="Message">
+                            
+                            <!-- <a href="#" class="input-link">submit</a> -->
+                            <button class="input-link">submit</button>
+                        
+                    </form>
+                </div>
             </div>
-            <div class="input-card1">
-             <input type="email" class="input-form" placeholder="Email Address">
-             <hr>
-            </div>
-            <div class="input-card">
-                <input type="text" class="input-form" placeholder="Company Name">
-                <hr>
-               </div>
-               <div class="input-card">
-                <input type="text" class="input-form" placeholder="Title">
-                <hr>
-               </div>
-
-               <div class="input-card">
-                <input type="text" class="input-form" placeholder="Message">
-                <hr class="hr">
-
-                <a href="#" class="input-link">submit</a>
-               </div>
-              
-
-
-            </form>
         </div>
-
-    </div>
-
-    </section>
-
-
-
-
-
-    <footer class="myteam-footer">
+    </header>
+    
+    
+    
+    <footer class="site-footer">
         <div class="container">
-            <div class="hillcrest-footer">
-            <div class="hillcrest">
-                <a href="/" class="icon-logojon">
-                    <img src="./images/myteam-logo.svg" alt="" width="160" height="40">
-                </a>
-                <ul class="footer-list">
-                    <li class="footer-item">
-                        <a href="" class="footer-navlink">home</a>
-                    </li>
-                    <li class="header-item">
-                        <a href="" class="footer-navlink">about</a>
-                    </li>
-                    
-                </ul>
+            <div class="footer">
+                <div class="footer-wrapper">
+                    <div class="footer-card">
+                        <img class="footer-img" src="./image/logo.svg" alt="myteam footer">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a target="blank" class="footer-link" href="./index.html">home</a>
+                            </li>
+                            <li class="footer-item">
+                                <a target="blank" class="footer-link" href="./about.html">about</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+                    <div class="footer-wrapper-card">
+                        <ul class="card-list">
+                            <li class="card-item">987 Hillcrest Lane</li>
+                            <li class="card-item">Irvine, CA</li>
+                            <li class="card-item">California 92714</li>
+                            <li class="card-item">Call Us : 949-833-7432</li>
+                        </ul>
+                        <!-- <p class="footer-wrapper-card-text">987  Hillcrest Lane Irvine, CA California 92714 Call Us : 949-833-7432</p> -->
+                    </div>
+                </div>
+                <div class="wrapper-card">
+                    <div class="wrapper-card-inner">
+                        <img class="wrapper-card-img" src="./image/footer-img3.svg" alt="footer img" width="24" height="24">
+                        <img class="wrapper-card-img" src="./image/footer-img1.svg" alt="footer img" width="24" height="24">
+                        <img class="wrapper-card-img" src="./image/footer-img2.svg" alt="footer img" width="24" height="19">
+                    </div>
+                    <span class="wrapper-card-line">Copyright 2020. All Rights Reserved</span>
+                </div>
             </div>
-            <div class="reserve">
-            <p class="hillcrest-text">987  Hillcrest Lane<br>Irvine, CA<br>California 92714<br>Call Us : 949-833-7432</p>
         </div>
-            <div class="reserved">
-            <img src="./images/faceboook.png" alt="" class="faceboook" width="104" height="24">
-            <p class="hillcrest-text1">Copyright 2020. All Rights Reserved</p>
-        </div>
-        </div></div>
     </footer>
-
-
-
+    
+    
+    <!-- site  footer end  -->
 </body>
 </html>

@@ -1,0 +1,177 @@
+.leading-section {
+    padding: 140px 0;
+    background-image: url("../../image/leading-bg.svg") , url("../../image/leading-img-bg.svg");
+    background-repeat: no-repeat , no-repeat;
+    background-position: left top , right 640px;
+}
+.success__content-title{
+    width: 932px;
+    margin: 0 auto;
+}
+.success__title {
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 100% */
+}
+.success__title-color {
+    color: #79C8C7;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+.success__list {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.success__item {
+    width: 350px;
+    padding: 34px 0 0 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../image/success-item-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.success__text {
+    margin-bottom: 24px;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 166.667% */
+}
+.success__bold {
+    margin-bottom: 2px;
+    display: inline-block;
+    color: #79C8C7;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+}
+.success__line {
+    margin-bottom: 32px;
+    display: inline-block;
+    color: #FFF;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px; /* 138.462% */
+}
+
+@media only screen and (max-width:1000px){
+    .leading-section{
+        background-image: url("../image/leading-tablet-bg2.png");
+        background-position: bottom right;
+    }
+    .success__list{
+        flex-direction: column;
+    }
+    .success__item{
+        width: 80%;
+    }
+    .success__content-title{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 816px){
+    .leading-section{
+        padding: 100px 24px;
+        background-image: url("../../image/leading-tablet-bg.png" ) , url("../../image/leading-tablet-bg2.png");
+        background-position: left top , right bottom;
+    }
+    .success__content-title{
+        width: 100%;
+        text-align: center;
+    }
+    .success__title{
+        font-size: 32px;
+        line-height: 32px; 
+    }
+    .success__title-color{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .success__wrapper{
+        margin-top: 84px;
+    }
+    .success__list{
+        margin-top: 0;
+    }
+    .success__item{
+        width: 100%;
+        padding: 0;
+    }
+    .success__item + .success__item{
+        margin-top: 84px;
+    }
+    .success__text{
+        margin-bottom: 16px;
+        font-size: 15px;
+        line-height: 25px; /* 166.667% */
+    }
+    .success__bold{
+        margin-bottom: 1px;
+        font-size: 18px;
+        line-height: 28px; /* 155.556% */
+    }
+    .success__line{
+        margin-bottom: 16px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .leading-section{
+        padding: 140px 0 164px;
+        background-image: url("../../image/leading-mobile-bg.png" ) , url("../../image/leading-mobile-bg2.png");
+        background-position: left top , right bottom;
+    }
+    .success__content-title{
+        width: 100%;
+        text-align: center;
+    }
+    .success__title{
+        font-size: 32px;
+        line-height: 32px; /* 100% */
+    }
+    .success__title-color{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .success__list{
+        margin-top: 48px;
+        flex-direction: column;
+    }
+    .success__item{
+        width: 100%;
+        text-align: center;
+    }
+    .success__item + .success__item{
+        margin-top: 48px;
+    }
+    .success__text{
+        margin-bottom: 16px;
+        font-size: 15px;
+        line-height: 25px; /* 166.667% */
+    }
+    .success__bold{
+        margin-bottom: 1px;
+        font-size: 18px;
+        line-height: 28px; /* 155.556% */
+    }
+    .success__line{
+        margin-bottom: 16px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}

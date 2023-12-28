@@ -1,0 +1,30 @@
+.site-header {
+  padding: 73px 0 129px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__content{
+  display: flex;
+  align-items: center;
+}
+.header__logo-link {
+  display: inline-block;
+  margin-right: 80px;
+}
+
+@media only screen and (max-width:768px){
+  .site-header{
+    padding: 64px 0 112px;
+  }
+  .header__logo-link{
+      margin-right: 48px;
+  }
+  .header__logo{
+      width: 128px;
+      height: 32px;
+  }
+}
+

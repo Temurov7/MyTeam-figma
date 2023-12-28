@@ -1,0 +1,129 @@
+.site-footer {
+    padding: 48px 0;
+    background-color: #002529;
+}
+.footer {
+    display: flex;
+    align-items: start;
+}
+.footer__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer__wrapper {
+    display: flex;
+}
+.footer__logo-link{
+    display: inline-block;
+}
+.footer__list {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.footer__item + .footer__item{
+    margin-left: 40px;
+}
+.footer__link {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+}
+.footer__wrapper-card {
+    width: 200px;
+    margin-right: 414px;
+}
+.card__item {
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 166.667% */
+    opacity: 0.6;
+}
+.card__list{
+    margin-left: 125px;
+}
+.wrapper__card {
+    text-align: end;
+}
+.wrapper__card-inner {
+    margin-bottom: 51px;
+}
+.wrapper__card-img + .wrapper__card-img{
+    margin-left: 10px;
+}
+.wrapper__card-line {
+    color: #FFF;
+    text-align: right;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 166.667% */
+    opacity: 0.6;
+}
+.footer__table{
+    display: none;
+}
+@media only screen and (max-width:800px){
+
+    .site-footer{
+        padding: 56px 0;
+    }
+    .footer__img{
+        width: 128px;
+        height: 32px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer__content{
+       display: none;
+    }
+    .footer__table{
+        display: block;
+    }
+    .footer__content-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .wrapper__card{
+        margin-top: 33px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .wrapper__card-inner{
+        margin-bottom: 0;
+    }
+   
+}
+@media only screen and (max-width:563px){
+    .footer__content-top{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .footer__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+    .card__list{
+        margin-left: 0;
+    }
+    .wrapper__card{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .wrapper__card-inner{
+        margin-bottom: 15px;
+    }
+}

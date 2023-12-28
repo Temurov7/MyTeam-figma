@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Livvic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-Bold.woff2') format('woff2'),
+    url('../fonts/Livvic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Livvic-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/Livvic-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-Medium.woff2') format('woff2'),
+    url('../fonts/Livvic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
+    url('../fonts/Livvic-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: 'Livvic', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-header{
+    background-color: #014E56;
+    background-image: url("../image/director-big.png") , url("../image/contact-big.png");
+    background-repeat: no-repeat , no-repeat;
+    background-size: 200px 200px , 225px 200px;
+    background-position-y: calc(50% - 13%) , calc(50% + 50%);
+    background-position-x: calc(50% - 760px) ,calc(50% + 767px);
+}
+.header{
+    margin-bottom: 140px;
+    padding-top: 77px;
+    display: flex;
+    align-items: center;
+}
+.header-navbar{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-list{
+    display: flex;
+    align-items: center;
+}
+.header-item{
+    margin-left: 80px;
+}
+.header-navlink{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+.header-navlink:hover{
+    transition: color 0.4s;
+    color: #F67E7E;
+}
+.header-item + .header-item{
+    margin-left: 40px;
+}
+.header-link{
+    width: 153px;
+    height: 48px;
+    display: inline-block;
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 24px;
+    border: 2px solid #FFF;
+    /* border: none; */
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px;
+    transition: all 0.4s;
+}
+.header-link:hover{
+    color: #014E56;
+    background-color: #FFF;
+}
+.contact{
+    padding-bottom: 128px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.contact-title{
+    margin-bottom: 16px;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px;
+}
+.contact-bold{
+    padding-bottom: 32px;
+    color: #F67E7E;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+.contact-inner{
+    display: flex;
+    align-items: center;
+}
+.contact-img{
+    margin-top: 32px;
+    margin-right: 23px;
+    margin-bottom: 8px;
+}
+.contact-text{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.input-form::placeholder{
+    color: #92AFB2;
+    
+}
+
+.input-form{
+    padding-bottom: 35px;
+    background-color: #014E56;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    /* border: none; */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; 
+    letter-spacing: -0.115px;
+    opacity: 0.6;
+}
+.input-link{
+    display: inline-block;
+    width: 130px;
+    padding: 8px 14px;
+    margin-right: 50px;
+    border-radius: 24px;
+    border: 2px solid white;
+    text-align: center;
+    flex-shrink: 0;
+    background-color: #FFF;
+    color: #004047;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+.cardsf{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 540px;
+}
+
+
+
+
+.site-footer{
+    background-color: #002529;
+}
+.footer{
+    padding: 48px 0 48px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-wrapper{
+    width: 730px;
+    height: 100px;
+    display: flex;
+}
+.footer-img{
+    margin-bottom: 25px;
+}
+.footer-list{
+    display: flex;
+}
+.footer-item + .footer-item{
+    margin-left: 40px;
+}
+.footer-link{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+.footer-link:hover{
+    transition: color 0.4s;
+    color: #F67E7E;
+}
+.footer-wrapper-card{
+    width: 445px;
+    height: 100px;
+}
+.card-item{
+    margin-left: 125px;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; 
+    opacity: 0.6;
+}
+.wrapper-card{
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-card-inner{
+    width: 104px;
+    margin-left: 150px;
+    margin-bottom: 51px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wrapper-card-img + .wrapper-card-img{
+    margin-left: 16px;
+    border-radius: 50%;
+}
+.wrapper-card-line{
+    color: #FFF;
+    text-align: right;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; 
+    opacity: 0.6;
+}
+.input-form{
+    margin-bottom: 24px;
+    color: white;
+    padding: 5px 81px 17px 14px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    outline: none;
+}
+
+/* site footer style end  */

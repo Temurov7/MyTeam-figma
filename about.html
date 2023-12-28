@@ -3,131 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>About</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <section class="about-section">
+    <!-- about header start -->
+    <header class="site-about">
         <div class="container">
-            <div class="about-content">
-                <a href="/" class="icon-logo">
-                    <img src="./images/myteam-logo.svg" alt="" width="160" height="40">
+            <div class="about">
+                <a class="about-logo-link" href="#">
+                    <img class="logo-img" src="./image/logo.svg" alt="myteam-logo">
                 </a>
-                <ul class="about-list">
-                    <li class="about-item">
-                        <a href="./contact.html" class="about-navlink">home</a>
-                    </li>
-                    <li class="about-item">
-                        <a href="./contact.html" class="about-navlink">about</a>
-                    </li>
-                    
-                </ul>
-                <a href="./contact.html" class="about-link">contact us</a>
+                <div class="about-navbar">
+                    <ul class="about-list">
+                        <li class="about-item">
+                            <a target="blank" class="about-navlink" href="./index.html">home</a>
+                        </li>
+                        <li class="about-item">
+                            <a class="about-navlink" href="/">about</a>
+                        </li>
+                    </ul>
+                    <a target="blank" class="about-link" href="./contact.html">contact us</a>
+                </div>
+                
             </div>
-            <div class="about-companies">
-            <h2 class="about-title">About</h2>
-                        
-                        <div class="about-strong">
-                            <strong class="about-line"></strong>
-                            <p class="about-text">We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p></div>
-                        </div>
+            <div class="about-wrapper">
+                <!-- <div class="wrapper-inner"></div> -->
+                <h1 class="about-wrapper-title">About</h1>
+                <div class="about-wrapper-inner">
+                    <span class="about-wrapper-line"></span>
+                    <p class="about-wrapper-text">We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.
+                    </p>
+                </div>
+            </div>
         </div>
-    </section>
+        
+    </header>
+    <!-- about header end -->
     
-    <section class="directors">
-        <div class="container">
-            <div class="thedirectors">
-                <h2 class="meet">Meet the directors</h2>
-
-                <div class="meetthedirectors">
-
-
-                    <div class="nikitamarks">
-                    <span class="meet-span">Nikita Marks</span>
-                    <p class="meet-text">Founder & CEO</p>
-                </div>
-                
-                <div class="nikitamarks1">
-                    <span class="meet-span">Cristian Duncan</span>
-                    <p class="meet-text">Co-founder & COO</p>
-                </div>
-                
-                <div class="nikitamarks2">
-                    <span class="meet-span">Cruz Hamer</span>
-                    <p class="meet-text">FCo-founder & CTO</p>
-                </div>
-                
-                <div class="nikitamarks3">
-                    <span class="meet-span">Drake Heaton</span>
-                    <p class="meet-text">Business Development Lead</p>
-                </div>
-                
-                <div class="nikitamarks4">
-                    <span class="meet-span">Griffin WiseNikita Marks</span>
-                    <p class="meet-text">Lead Marketing</p>
-                </div>
-
-                
-                <div class="nikitamarks5">
-                    <span class="meet-span">Aden Allan</span>
-                    <p class="meet-text">“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
-                </div>
-                
-
-
+    <!-- site main start  -->
+    
+    <main>
+        <section class="site-director">
+            <div class="container">
+                <div class="director">
+                    <h2 class="director-title"> Meet the directors</h2>
+                    <div class="director-wrapper">
+                       
+                        <ul class="director-list">
+                            <!-- <div class="director-list-inner"> -->
+                            <li class="director-item">
+                                <div class="director-item-card">
+                                    <img class="director-img" src="./image/director-img1.png" alt="Director img" width="92" height="92">
+                                    <strong class="director-bold">Nikita Marks</strong>
+                                    <span class="director-line">Founder & CEO</span>
+                                    <img class="director-img-list" src="./image/director-img7.png" alt="Director img" width="56" height="56">
+                                </div>
+                            </li>
+                            <li class="director-item">
+                                <div class="director-item-card">
+                                    <img class="director-img" src="./image/director-img2.png" alt="Director img" width="92" height="92">
+                                    <strong class="director-bold">Cristian Duncan</strong>
+                                    <span class="director-line">Co-founder & COO</span>
+                                    <img class="director-img-list" src="./image/director-img7.png" alt="Director img" width="56" height="56">
+                                </div>
+                            </li>
+                            <li class="director-item">
+                                <div class="director-item-card">
+                                    <img class="director-img" src="./image/director-img3.png" alt="Director img" width="92" height="92">
+                                    <strong class="director-bold">Cruz Hamer</strong>
+                                    <span class="director-line">Co-founder & CTO</span>
+                                    <img class="director-img-list" src="./image/director-img7.png" alt="Director img" width="56" height="56">
+                                </div>
+                            </li>
+                        <!-- </div> -->
+                            <!-- <div class="director-inner"> -->
+                            <li class="director-item">
+                                <div class="director-item-card">
+                                    <img class="director-img" src="./image/director-img4.png" alt="Director img" width="92" height="92">
+                                    <strong class="director-bold">Drake Heaton</strong>
+                                    <span class="director-line">Business Development Lead</span>
+                                    <img class="director-img-list" src="./image/director-img7.png" alt="Director img" width="56" height="56">
+                                </div>
+                            </li>
+                            <li class="director-item">
+                                <div class="director-item-card">
+                                    <img class="director-img" src="./image/director-img5.png" alt="Director img" width="92" height="92">
+                                    <strong class="director-bold">Griffin Wise</strong>
+                                    <span class="director-line">Lead Marketing</span>
+                                    <img class="director-img-list" src="./image/director-img7.png" alt="Director img" width="56" height="56">
+                                </div>
+                            </li>
+                            <li class="director-item-inner">
+                                <div class="director-item-card-inner">
+                                    <strong class="director-bold">Aden Allan</strong>
+                                    <div class="director-card">
+                                    <p class="director-text">“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                                </div>
+                                    <div class="director-card-img">
+                                        <img class="director-img-inner" src="./image/footer-img2.svg" alt="director img" width="24" height="20">
+                                        <img class="director-img-inner" src="./image/director-img6.svg" alt="director img" width="20" height="20">
+                                        
+                                    </div>
+                                    <img class="director-img-list" src="./image/director-img8.png" alt="Director img" width="56" height="56">
+                                </div>
+                            </li>
+                        <!-- </div> -->
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="techradar">
-        <div class="container">
-            <div class="techradar-contents">
-                <h2 class="some">Some of our clients</h2>
-               <img class="about455" src="./images/about455.png" alt="" width="1000" height="40">
-
+        </section>
+        <section class="client-section">
+            <div class="container">
+                <div class="client">
+                    <h2 class="client-title">Some of our clients</h2>
+                    <div class="client-wrap">
+                        <img class="client-img" src="./image/client-img.png" alt="client group img" >
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footers">
-        <div class="container">
-            <div class="footer-content">
-                <h2 class="footer-title">Ready to get started?</h2>
-                <div class="footer-line">
-                <a href="./contact.html" class="footer-link">contact us</a>
+        <section class="site-ready">
+            <div class="container">
+                <div class="ready">
+                    <div class="ready-wrapper">
+                        <strong class="ready-bold">Ready to get started?</strong>
+                        <a class="ready-link" href="#">contact us</a>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
+        </section>
+        
+    </main>
 
-    </footer>
-    <footer class="myteam-footer">
+    <!-- site main end  -->
+
+  <!-- site  footer strat  -->
+
+    <footer class="site-footer">
         <div class="container">
-            <div class="hillcrest-footer">
-            <div class="hillcrest">
-                <a href="/" class="icon-logojon">
-                    <img src="./images/myteam-logo.svg" alt="" width="160" height="40">
-                </a>
+            <div class="footer">
+               <div class="footer-wrapper">
+                <div class="footer-card">
+                <img class="footer-img" src="./image/logo.svg" alt="myteam footer">
                 <ul class="footer-list">
                     <li class="footer-item">
-                        <a href="./contact.html" class="footer-navlink">home</a>
+                        <a class="footer-link" href="#">home</a>
                     </li>
-                    <li class="header-item">
-                        <a href="./contact.html" class="footer-navlink">about</a>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">about</a>
                     </li>
-                    
                 </ul>
             </div>
-            <div class="reserve">
-            <p class="hillcrest-text">987  Hillcrest Lane<br>Irvine, CA<br>California 92714<br>Call Us : 949-833-7432</p>
+               <!-- </div> -->
+               <div class="footer-wrapper-card">
+                <ul class="card-list">
+                    <li class="card-item">987 Hillcrest Lane</li>
+                    <li class="card-item">Irvine, CA</li>
+                    <li class="card-item">California 92714</li>
+                    <li class="card-item">Call Us : 949-833-7432</li>
+                </ul>
+                <!-- <p class="footer-wrapper-card-text">987  Hillcrest Lane Irvine, CA California 92714 Call Us : 949-833-7432</p> -->
+                </div>
+               </div>
+              <div class="wrapper-card">
+                <div class="wrapper-card-inner">
+                <img class="wrapper-card-img" src="./image/footer-img3.svg" alt="footer img" width="24" height="24">
+                <img class="wrapper-card-img" src="./image/footer-img1.svg" alt="footer img" width="24" height="24">
+                <img class="wrapper-card-img" src="./image/footer-img2.svg" alt="footer img" width="24" height="19">
+            </div>
+                <span class="wrapper-card-line">Copyright 2020. All Rights Reserved</span>
+              </div>
+            </div>
         </div>
-            <div class="reserved">
-            <img src="./images/faceboook.png" alt="" class="faceboook" width="104" height="24">
-            <p class="hillcrest-text1">Copyright 2020. All Rights Reserved</p>
-        </div>
-        </div></div>
     </footer>
-     
-
+    
+    
+    <!-- site  footer end  -->
+    
 </body>
 </html>
